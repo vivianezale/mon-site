@@ -1,0 +1,91 @@
+css
+
+.container {
+    background-color: #222;
+    padding: 30px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px;
+    rgba(0,0,0,0.5);
+
+}
+body{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+
+}
+h1 {
+    color:orange;
+
+}
+button {
+    padding: 12px 25px;
+    background-color: orange;
+    border: none; 
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.35;
+
+
+}
+p {
+    font-size: 18px;
+    color: #CCC;
+}
+
+button: hover {
+    background-color: darkorange;
+transform: scale(1.1);
+}
+img {
+    width: 300px;
+border-radius: 10px;
+margin-top: 20px;
+
+}
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+
+}
+textarea{
+    height: 100px;
+
+}
+form button:hover {
+    background-color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+form button:hover {
+    background-color: darkorange;
+
+}
+@media (max-width: 60px) {
+    .container {
+        width: 90p%;
+        margin: 20px auto;
+         
+    }
+    img {
+        width: 100%;
+
+    }
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+}
