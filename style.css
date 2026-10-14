@@ -1,91 +1,173 @@
-css
-
-.container {
-    background-color: #222;
-    padding: 30px;
-    margin: 50px auto;
-    width: 50%;
-    border-radius: 15px;
-    box-shadow: 0 0 20px;
-    rgba(0,0,0,0.5);
-
+/* Style général du site */
+* {
+    box-sizing: border-box;
 }
-body{
-    background-color: #111;
-    color: white;
-    text-align: center;
-    font-family: Arial, sans-serif;
+
+body {
     margin: 0;
-
-
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101827, #243b55);
+    color: white;
+    line-height: 1.6;
 }
+
+/* Menu de navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #f5a623;
+}
+
+/* Contenu principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 40px 25px;
+    margin: 60px auto;
+    width: 85%;
+    max-width: 850px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Grand titre */
 h1 {
-    color:orange;
-
-}
-button {
-    padding: 12px 25px;
-    background-color: orange;
-    border: none; 
-    cursor: pointer;
-    font-size: 40px;
-    border-radius: 8px;
+    font-size: 38px;
     margin-bottom: 10px;
-    transition: 0.35;
-
-
-}
-p {
-    font-size: 18px;
-    color: #CCC;
 }
 
-button: hover {
-    background-color: darkorange;
-transform: scale(1.1);
+/* Sous-titres */
+h2 {
+    color: #f5a623;
 }
+
+/* Photo */
 img {
-    width: 300px;
-border-radius: 10px;
-margin-top: 20px;
-
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: 20px 0;
 }
-input, textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+
+/* Bouton de contact */
+button {
+    background-color: #f5a623;
+    color: #172033;
     border: none;
-
-}
-textarea{
-    height: 100px;
-
-}
-form button:hover {
-    background-color: orange;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-
+    transition: 0.3s;
 }
-form button:hover {
-    background-color: darkorange;
 
-}
-@media (max-width: 60px) {
+button:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    }
+
+/* Adaptation aux telephones */
+@media (max-width: 600px) {
     .container {
-        width: 90p%;
-        margin: 20px auto;
-         
+        width: 92%;
+        margin: 25px auto;
+        padding: 25px 15px;
     }
-    img {
-        width: 100%;
 
+    h1 {
+        font-size: 28px;
     }
+
     nav a {
-        display: block;
-        margin: 10px;
+        margin: 5px 8px;
+    }
+}
+/* Formulaire de contact */
+form {
+    max-width: 550px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #aab7c8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #172033;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #f5a623;
+    box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.2);
+}
+
+form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    margin: 22px auto 0;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 50px;
+     padding: 22px 15px;
+    text-align: center;
+    background-color: #0b1220;
+    color: #dbe4f0;
+    border-top: 2px solid #f5a623;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Adaptation du formulaire aux petits ecrans */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    form button {
+        width: 100%;
     }
 }
