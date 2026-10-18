@@ -204,3 +204,54 @@ footer p {
         width: 100%;
     }
 }
+/* CARTES DE COMPETENCES */
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.competence-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 16px;
+    padding: 25px 22px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                background 0.3s ease;
+}
+
+.competence-card:hover {
+    transform: translateY(-5px);
+    border-color: #60a5fa;
+    background: rgba(96, 165, 250, 0.10);
+}
+
+.competence-card h3 {
+    color: #60a5fa;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.competence-card p {
+    color: #dbe4f0;
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/* AFFICHAGE SUR TELEPHONE */
+@media (max-width: 600px) {
+    .competences-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .competence-card {
+        padding: 22px 18px;
+    }
+}
