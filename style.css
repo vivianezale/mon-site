@@ -250,6 +250,52 @@ footer p {
         grid-template-columns: 1fr;
         gap: 16px;
     }
+    /* AMELIORATION DES FICHES DE PROJETS */
+#projets .project-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 16px;
+    padding: 26px;
+    margin: 22px auto;
+    max-width: 750px;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+#projets .project-card:hover {
+    transform: translateY(-4px);
+    border-color: #60a5fa;
+}
+
+#projets .project-card h3 {
+    color: #60a5fa;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+#projets .project-card p {
+    color: #dbe4f0;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+#projets .project-card strong {
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    #projets .project-card {
+        padding: 20px;
+        margin: 18px auto;
+    }
+
+    #projets .project-card h3 {
+        font-size: 19px;
+    }
+}
 
     .competence-card {
         padding: 22px 18px;
